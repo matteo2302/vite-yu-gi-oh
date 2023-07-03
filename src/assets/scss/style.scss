@@ -1,3 +1,14 @@
 body {
   font-family: Montserrat, sans-serif;
 }
+li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+  height: 200px;
+  width: 150px;
+}
+img {
+  height: 100%;
+}

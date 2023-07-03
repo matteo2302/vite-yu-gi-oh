@@ -1,5 +1,6 @@
 <script >
-import { registerRuntimeCompiler } from 'vue';
+const endpoint = 'https://41tyokboji.execute-api.eu-central-1.amazonaws.com/dev/api/v1/pokemons'
+
 import AppMain from './components/AppMain.vue'
 export default {
   data() {

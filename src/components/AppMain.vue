@@ -1,15 +1,21 @@
 <script>
+import AppPokeList from './AppPokeList.vue'
+
 export default {
   data() {
     return {
 
     }
   }
+  ,
+  components: { AppPokeList }
 };
 
 
 </script>
 
-<template></template>
+<template>
+  <AppPokeList />
+</template>
 
 <style scoped></style>
