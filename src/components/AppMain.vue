@@ -1,5 +1,5 @@
 <script>
-import AppPokeList from './AppPokeList.vue'
+import AppList from './AppList.vue'
 
 export default {
   data() {
@@ -8,14 +8,14 @@ export default {
     }
   }
   ,
-  components: { AppPokeList }
+  components: { AppList }
 };
 
 
 </script>
 
 <template>
-  <AppPokeList />
+  <AppList />
 </template>
 
 <style scoped></style>
