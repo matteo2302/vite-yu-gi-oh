@@ -14,7 +14,7 @@ export default {
 
 <template>
   <ul class="d-flex row row-col-2 flex-shrink-1">
-    <li v-for="pokemon in   pokemons  " :key="pokemon._id" class="col">
+    <li v-for="pokemon in   store.pokemons  " :key="pokemon._id" class="col">
       <img :src="pokemon.imageUrl" :alt="pokemon.name">
       <div>{{ pokemon.number }}</div>
       <div>{{ pokemon.name }}</div>
