@@ -1,26 +1,19 @@
 <script>
-const endpoint = 'https://41tyokboji.execute-api.eu-central-1.amazonaws.com/dev/api/v1/pokemons'
-import axios from 'axios';
+import { store } from '../data/store.js'
 export default {
   data() {
     return {
-      pokemons: [],
+      store
     }
   },
-  created() {
-    axios.get(endpoint).then((res) => {
-      this.pokemons = res.data.docs;
-      console.log(pokemons)
-    })
 
-  }
 };
 
 
 </script>
 
 <template>
-  <ul class="d-flex row row-col-2">
+  <ul class="d-flex row row-col-2 flex-shrink-1">
     <li v-for="pokemon in   pokemons  " :key="pokemon._id" class="col">
       <img :src="pokemon.imageUrl" :alt="pokemon.name">
       <div>{{ pokemon.number }}</div>
